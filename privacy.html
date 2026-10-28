@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal officiel — République</title>
+<meta name="description" content="Politique de confidentialité de L’Accusateur Public, bot Discord de jeu de rôle révolutionnaire.">
+<title>Politique de confidentialité — L’Accusateur Public</title>
 <style>
 :root{--green:#14251f;--paper:#f5f0e3;--ink:#24271f;--gold:#b9a66d;--muted:#66685f}
 *{box-sizing:border-box}
@@ -20,36 +21,59 @@ h2{font-size:21px;line-height:1.3;margin:30px 0 8px;border-bottom:1px solid #d5c
 p{margin:10px 0}
 footer{max-width:780px;margin:auto;padding:22px;color:#555d53;font:12px/1.7 Arial,sans-serif;text-align:center}
 a{color:inherit}
+
+a{color:inherit;text-underline-offset:3px}a:hover{color:#66501b}
+nav{display:flex;gap:12px 24px;flex-wrap:wrap;margin-top:20px;font:14px/1.6 Arial,sans-serif}
+nav a{color:var(--paper)}nav a[aria-current="page"]{font-weight:bold}
+.notice{border-left:4px solid var(--gold);padding:14px 18px;background:#ebe4d2;margin:22px 0}
+:focus-visible{outline:3px solid #a57514;outline-offset:4px}
+@media print{body,header,main{background:white;color:black}header{padding:16px 0}.subtitle,nav a{color:black}main{padding:16px 0}.head,main,footer{max-width:none}}
 </style>
 </head>
 <body>
 <header><div class="head">
-<div class="eyebrow">République · Une et indivisible</div>
+<div class="eyebrow">L’Accusateur Public · République une et indivisible</div>
 <h1>JOURNAL OFFICIEL</h1>
-<div class="subtitle">Ministère de la Sûreté Civique · Direction des Affaires Numériques</div>
+<div class="subtitle"><em>La République veille, la Justice tranche.</em></div>
+<nav aria-label="Documents du bot">
+<a href="terms.html">Conditions d’utilisation</a>
+<a href="privacy.html" aria-current="page">Confidentialité</a>
+</nav>
 </div></header>
 <main>
-<div class="stamp">DÉCRET RELATIF À LA CONFIDENTIALITÉ DES AFFAIRES</div>
-<div class="meta">DÉCRET N° 001 · POLITIQUE DE CONFIDENTIALITÉ · 21 OCTOBRE 2026</div>
-<h2>Préambule</h2>
-<p>Considérant que nul citoyen ne saurait être soustrait à la procédure, et que toute procédure se doit néanmoins de respecter certaines règles, la République arrête les dispositions suivantes.</p>
-<h2>Article I — Des renseignements d'identité</h2>
-<p>Pour les besoins de l'administration, le bot traite les identifiants Discord, les noms des citoyens concernés et les motifs soumis lors d'une dénonciation. Le délateur n'est pas oublié par les registres.</p>
-<h2>Article II — De la publicité des affaires</h2>
-<p>Toute dénonciation acceptée est transmise aux salons Discord prévus à cet effet : publication de l'affaire, ouverture du débat et notification de l'administration. Les débats peuvent donner lieu à des votes et à la proclamation d'un verdict.</p>
-<p>Les motifs et les identités publiés peuvent être visibles par les membres disposant des permissions nécessaires sur le serveur. La confidentialité ne saurait être présumée dans un espace où l'affaire est rendue publique.</p>
-<h2>Article III — De l'archivage</h2>
-<p>Les dossiers sont conservés sous forme de messages Discord. Les débats sont ouverts dans des fils configurés pour être archivés après vingt-quatre heures. L'archivage ne constitue pas une suppression.</p>
-<p>Le bot ne dispose, dans sa version actuelle, d'aucune base de données dédiée ni d'un mécanisme automatique d'effacement des affaires. Les messages restent soumis aux règles de conservation et aux possibilités de suppression de Discord.</p>
-<h2>Article IV — Des moyens de l'administration</h2>
-<p>Le bot est exécuté sur un serveur privé virtuel (VPS). L'hébergeur peut traiter des données techniques et conserver des journaux conformément à ses propres pratiques. Les erreurs du bot peuvent également être consignées dans les journaux du processus d'exploitation.</p>
-<h2>Article V — Des droits des citoyens</h2>
-<p>Pour toute question concernant les données d'une affaire, une demande d'accès ou une demande de suppression, contactez l'équipe d'administration du serveur Discord sur lequel le bot est utilisé. Les demandes seront examinées selon les possibilités techniques et les règles applicables.</p>
-<h2>Article VI — De la compétence juridictionnelle</h2>
-<p>Les données sont traitées afin d'assurer le fonctionnement du bot et des procédures communautaires qu'il organise. Le code actuellement fourni ne prévoit aucun usage publicitaire ni aucune vente de données.</p>
-<h2>Article VII — De la révision du présent décret</h2>
-<p>La présente politique pourra être révisée si les fonctions du bot ou les données traitées évoluent. Les citoyens sont invités à consulter cette page pour prendre connaissance de toute modification.</p>
-<p><em>Fait au nom de la République. La procédure est permanente ; la conservation, elle, dépend des systèmes qui l'hébergent.</em></p>
+<div class="stamp">POLITIQUE DE CONFIDENTIALITÉ</div>
+<div class="meta">DÉCRET N° 001 · MISE À JOUR DU 29 OCTOBRE 2026</div>
+
+<h2>Préambule — Le greffe tient ses registres</h2>
+<p>L’Accusateur Public organise des procès fictifs sur Discord. Cette politique explique ce que le bot traite réellement. Le vocabulaire révolutionnaire relève du jeu de rôle ; les renseignements ci-dessous décrivent le fonctionnement du service.</p>
+<div class="notice"><strong>À retenir :</strong> l’identité de la personne qui accuse et les choix individuels des votant.e.s sont masqués au public, mais ne sont pas anonymes pour l’administration habilitée et l’exploitant technique. L’identité de la personne qui accuse et les choix de chaque votant.e sont enregistrés.</div>
+<h2>Article I — Des données inscrites au dossier</h2>
+<p>Le bot traite les identifiants Discord des personnes qui accusent, des accusé.e.s, des votant.e.s et des personnes qui décident une clôture ou une annulation. Il utilise aussi le nom Discord de l’accusé.e pour présenter les dossiers.</p>
+<p>Sont enregistrés le motif de l’accusation, les choix de vote, les dates de création et de modification, l’état du procès, les résultats et les références des messages, salons et fils nécessaires au fonctionnement du bot. Les rôles et permissions Discord servent à vérifier les droits d’accès.</p>
+<p>La base du bot conserve le dernier choix de chaque personne pour une affaire, sans historique des choix remplacés. Elle ne recopie pas l’ensemble des conversations du fil. Les messages que vous écrivez dans Discord restent cependant hébergés par Discord.</p>
+<h2>Article II — De l’usage de ces renseignements</h2>
+<p>Ces données permettent de publier et retrouver les affaires, gérer une voix modifiable par citoyen.ne, calculer les verdicts, contrôler les accès et reprendre les dossiers après un redémarrage. Les journaux techniques servent à diagnostiquer les erreurs.</p>
+<p>Le bot ne prévoit ni publicité, ni vente de données, ni profilage commercial. Il ne demande pas votre mot de passe, votre adresse postale ou vos informations de paiement. Évitez de fournir des informations personnelles ou sensibles dans les motifs et les débats.</p>
+<h2>Article III — De ce que chacun.e peut voir</h2>
+<p><strong>Dans les espaces de débat :</strong> le numéro de l’affaire, l’accusé.e, le motif, les échanges et la décision sont visibles selon les permissions du serveur. Le bot n’y publie ni l’identité de la personne qui accuse ni la liste des votes individuels.</p>
+<p><strong>Dans les interfaces réservées :</strong> les personnes disposant des rôles administratifs configurés — Administrateur, Parlementaire, Bras-droit — ou de la permission Discord « Administrateur » peuvent consulter l’identité des votant.e.s et leurs choix.</p>
+<p><strong>Dans le salon de logs :</strong> l’identité de la personne qui accuse est consignée à l’ouverture. À la clôture ou à l’annulation, un récapitulatif des votant.e.s et de leurs choix est ajouté en réponse au log de l’affaire. L’accès à ce salon dépend de ses permissions Discord.</p>
+<p><strong>Pour l’exploitation technique :</strong> les personnes ayant accès au serveur d’hébergement peuvent accéder à la base et aux journaux. Une réponse Discord « visible uniquement par vous » limite son affichage dans le salon ; elle ne signifie pas que les données traitées échappent à ces accès.</p>
+<h2>Article IV — Des lieux de conservation</h2>
+<p>Les dossiers et les votes sont stockés dans une base <strong>SQLite sur le VPS</strong> qui exécute le bot. Les annonces, fils, décisions et logs sont également conservés sous forme de messages sur Discord. Des journaux techniques peuvent contenir des identifiants et des informations liées aux erreurs.</p>
+<p>Discord et les prestataires d’hébergement traitent également des données pour leurs propres services. Leur fonctionnement ne dépend pas de la fiction républicaine. Consultez notamment la <a href="https://discord.com/privacy">politique de confidentialité de Discord</a>. Ces pages d’information sont hébergées sur GitHub Pages ; elles n’ajoutent aucun script de suivi ni formulaire de collecte.</p>
+<h2>Article V — De la durée et de l’effacement</h2>
+<p><strong>Aucun délai fixe ni effacement automatique n’est actuellement configuré.</strong> La conservation et la suppression sont gérées manuellement par l’administration, selon les demandes des personnes concernées et les besoins de gestion des affaires, dans le respect des règles applicables. Les dossiers clos ou annulés restent enregistrés tant qu’aucune suppression n’est effectuée.</p>
+<p>Clore un procès, archiver un fil ou quitter le serveur ne supprime pas les données. Supprimer un message Discord ne supprime pas automatiquement l’entrée correspondante dans la base du bot, et réciproquement. Les copies et éventuelles sauvegardes doivent être prises en compte lors du traitement d’une demande.</p>
+<p>Les données qui ne sont plus nécessaires au fonctionnement annoncé doivent être supprimées. Les demandes relatives aux données personnelles sont traitées hors du jeu de rôle ; elles ne sont pas soumises au vote du tribunal.</p>
+<h2>Article VI — Des demandes des citoyen.ne.s</h2>
+<p>Pour une question, une demande d’accès, de rectification ou de suppression de vos données, contactez le compte Discord <strong>.karantez</strong>, contact de l’exploitation du bot. Si vous ne pouvez pas le joindre directement, demandez à l’équipe d’administration du serveur de transmettre votre demande.</p>
+<p>Précisez le serveur et, si possible, les numéros des affaires concernées. Une vérification proportionnée de votre compte peut être nécessaire pour éviter de communiquer vos données à une autre personne. Aucun mot de passe ni jeton Discord ne doit être transmis.</p>
+<p>Il n’existe pas de commande de suppression automatique : une intervention technique est nécessaire pour traiter la base et les messages concernés. Les droits applicables peuvent également comprendre la limitation du traitement, l’opposition et la portabilité, selon votre situation. Vous pouvez saisir l’autorité de protection des données compétente, notamment la <a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL</a> en France.</p>
+<h2>Article VII — Des révisions du décret</h2>
+<p>Cette politique sera mise à jour si les données traitées ou les modalités du service changent. La date indiquée en tête permet d’identifier la version consultée. Les <a href="terms.html">conditions d’utilisation</a> décrivent les règles du jeu et du bot.</p>
+<p><em>La République veille, la Justice tranche. Vos demandes concernant vos données n’ont pas à attendre le verdict.</em></p>
 </main>
-<footer>DOCUMENT ADMINISTRATIF · Toute ressemblance avec une administration excessivement zélée est pleinement intentionnelle.</footer>
-</body></html>
+<footer>L’ACCUSATEUR PUBLIC · Contact Discord : <strong>.karantez</strong><br>Le tribunal est fictif. Les droits des personnes ne le sont pas.</footer>
+</body>
+</html>
