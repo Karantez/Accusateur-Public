@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal officiel — Conditions d'utilisation</title>
+<meta name="description" content="Conditions d’utilisation de L’Accusateur Public, bot Discord de jeu de rôle révolutionnaire.">
+<title>Conditions d’utilisation — L’Accusateur Public</title>
 <style>
 :root{--green:#14251f;--paper:#f5f0e3;--ink:#24271f;--gold:#b9a66d;--muted:#66685f}
 *{box-sizing:border-box}
@@ -19,41 +20,56 @@ main{background:var(--paper);padding:clamp(24px,6vw,56px);min-height:70vh}
 h2{font-size:21px;line-height:1.3;margin:30px 0 8px;border-bottom:1px solid #d5cdb8;padding-bottom:8px}
 p{margin:10px 0}
 footer{max-width:780px;margin:auto;padding:22px;color:#555d53;font:12px/1.7 Arial,sans-serif;text-align:center}
+
+a{color:inherit;text-underline-offset:3px}a:hover{color:#66501b}
+nav{display:flex;gap:12px 24px;flex-wrap:wrap;margin-top:20px;font:14px/1.6 Arial,sans-serif}
+nav a{color:var(--paper)}nav a[aria-current="page"]{font-weight:bold}
+.notice{border-left:4px solid var(--gold);padding:14px 18px;background:#ebe4d2;margin:22px 0}
+:focus-visible{outline:3px solid #a57514;outline-offset:4px}
+@media print{body,header,main{background:white;color:black}header{padding:16px 0}.subtitle,nav a{color:black}main{padding:16px 0}.head,main,footer{max-width:none}}
 </style>
 </head>
 <body>
 <header><div class="head">
-<div class="eyebrow">République · Une et indivisible</div>
+<div class="eyebrow">L’Accusateur Public · République une et indivisible</div>
 <h1>JOURNAL OFFICIEL</h1>
-<div class="subtitle">Ministère de la Sûreté Civique · Haute Cour des Procédures Numériques</div>
+<div class="subtitle"><em>La République veille, la Justice tranche.</em></div>
+<nav aria-label="Documents du bot">
+<a href="terms.html" aria-current="page">Conditions d’utilisation</a>
+<a href="privacy.html">Confidentialité</a>
+</nav>
 </div></header>
 <main>
-<div class="stamp">CONDITIONS GÉNÉRALES D'UTILISATION</div>
-<div class="meta">DÉCRET N° 002 · CONDITIONS D'UTILISATION · 21 OCTOBRE 2026</div>
-<h2>Préambule</h2>
-<p>La République, considérant que l'ordre ne saurait se maintenir de lui-même et que tout citoyen recèle potentiellement une affaire en attente d'instruction, établit les présentes conditions.</p>
-<h2>Article I — De la soumission volontaire à la procédure</h2>
-<p>L'utilisation du bot vaut reconnaissance du fait que ses fonctions sont destinées à organiser des dénonciations, des débats et des votes au sein du serveur. Nul ne saurait invoquer sa surprise après avoir lui-même convoqué la République.</p>
-<h2>Article II — Du droit de dénonciation</h2>
-<p>Tout utilisateur disposant de l'accès nécessaire peut soumettre une affaire en désignant une cible et en indiquant un motif. Les dénonciations doivent rester dans le cadre du jeu de rôle et des règles du serveur.</p>
-<p>Les menaces réelles, le harcèlement, la divulgation d'informations privées et les accusations malveillantes ne deviennent pas légitimes par le simple fait qu'on leur confère une tournure administrative.</p>
-<h2>Article III — Du débat contradictoire</h2>
-<p>Toute affaire soumise peut entraîner la publication d'un sujet de débat. Les participants sont invités à présenter leurs arguments dans le fil prévu à cet effet. La République encourage la contradiction ; elle tolère moins volontiers le désordre.</p>
-<h2>Article IV — Du vote et du verdict</h2>
-<p>Les votes exprimés au moyen des réactions prévues sont utilisés pour déterminer un verdict selon la logique du bot. Les utilisateurs autorisés peuvent déclencher sa publication.</p>
-<p>Le verdict constitue un résultat du système de vote communautaire. Il ne représente ni une décision judiciaire réelle ni une constatation objective de culpabilité.</p>
-<h2>Article V — Des prérogatives de l'administration</h2>
-<p>Les commandes réservées sont accessibles uniquement aux utilisateurs disposant des rôles autorisés par la configuration du bot. L'administration du serveur demeure responsable de la gestion des permissions et de la modération de sa communauté.</p>
-<h2>Article VI — Des abus et de leurs conséquences</h2>
-<p>L'utilisation du bot à des fins de harcèlement, de diffamation, d'intimidation ou de perturbation délibérée peut justifier des mesures de modération conformément aux règles du serveur.</p>
-<p>La République ne reconnaît aucune immunité particulière aux utilisateurs qui invoqueraient le jeu de rôle pour se soustraire aux règles applicables.</p>
-<h2>Article VII — Des limites de responsabilité</h2>
-<p>Le bot fournit des outils communautaires automatisés. Son fonctionnement peut être interrompu, et ses résultats peuvent dépendre de la configuration du serveur, des permissions et des interactions Discord.</p>
-<p>Les administrateurs doivent vérifier les permissions, surveiller les usages abusifs et ne pas considérer un verdict automatisé comme une preuve.</p>
-<h2>Article VIII — De la modification et de l'interprétation</h2>
-<p>Les présentes conditions peuvent être modifiées en fonction de l'évolution du bot. Toute utilisation doit respecter les conditions de Discord et les lois applicables.</p>
-<p><em>Ainsi en a décidé la République. Nul n'est censé ignorer le règlement ; nul règlement ne saurait abolir l'absurdité humaine.</em></p>
+<div class="stamp">CONDITIONS D’UTILISATION</div>
+<div class="meta">DÉCRET N° 002 · MISE À JOUR DU 29 OCTOBRE 2026</div>
+
+<h2>Préambule — La République veille, la Justice tranche.</h2>
+<p>L’Accusateur Public est un bot Discord de jeu de rôle inspiré de la Terreur révolutionnaire. Il organise des accusations, des débats et des votes communautaires. Le tribunal est fictif ; les personnes derrière les comptes ne le sont pas.</p>
+<p>Ces conditions décrivent son utilisation. Elles complètent les règles du serveur et les <a href="https://discord.com/terms">conditions de Discord</a>.</p>
+<h2>Article I — Du droit de porter une accusation</h2>
+<p>Les personnes portant le rôle <strong>Citoyen</strong> peuvent désigner un compte du serveur, y compris le leur, et déposer un motif de 3 000 caractères au maximum. La République accepte les aveux spontanés ; elle apprécie qu’ils tiennent dans le formulaire.</p>
+<p>Une accusation ouvre un dossier dans le salon des débats et un fil pour les échanges. Le compte mis en cause est mentionné dans l’annonce. Le motif et l’identité de l’accusé.e sont visibles par les personnes ayant accès à ces espaces.</p>
+<h2>Article II — De la tenue des débats</h2>
+<p>Présentez vos témoignages, pièces et arguments dans le fil de l’affaire. L’accusation doit pouvoir être examinée et la défense entendue. Les propos et les verdicts appartiennent au jeu de rôle : ils ne constituent ni des accusations judiciaires réelles ni des preuves de culpabilité.</p>
+<p>Les menaces réelles, le harcèlement, la divulgation d’informations privées et les accusations diffamatoires sont interdits. N’ajoutez pas de données sensibles au motif ou aux débats. Un cachet républicain ne transforme pas un abus en procédure régulière.</p>
+<h2>Article III — Des votes et du jugement populaire</h2>
+<p>Chaque citoyen.ne dispose d’une voix par affaire et choisit, à l’aide des boutons, entre <strong>Coupable</strong>, <strong>Doute persistant</strong> et <strong>Innocent</strong>. Son choix peut être modifié tant que le vote reste ouvert ; le dernier choix enregistré remplace le précédent.</p>
+<p>Lorsqu’une personne habilitée confirme la clôture, les votes sont figés. Le choix arrivé seul en tête détermine le verdict. Une égalité en tête ou l’absence de vote donne <strong>DOUTE PERSISTANT</strong>. La République sait douter ; elle tient à le faire en majuscules.</p>
+<p>La décision est publiée en réponse au message de l’affaire, dont l’état est également mis à jour. Le fil est verrouillé et archivé. Une annulation met fin à l’accusation sans rendre de verdict. L’archivage ou le verrouillage manuel d’un fil ne déclenche, à lui seul, aucune décision.</p>
+<h2>Article IV — Du secret et de ses limites</h2>
+<p>L’identité de la personne qui dépose l’accusation et les choix individuels des votant.e.s ne sont pas affichés au public par le bot. Ils sont toutefois enregistrés et accessibles aux personnes habilitées : <strong>l’anonymat annoncé dans le jeu n’est pas un anonymat à l’égard de l’administration ou de l’exploitant du bot.</strong></p>
+<p>La <a href="privacy.html">politique de confidentialité</a> détaille les données conservées, les accès et les demandes de suppression. Les formules RP n’en modifient pas les dispositions.</p>
+<h2>Article V — Des pouvoirs de l’administration</h2>
+<p>Les rôles configurés comme <strong>Administrateur</strong>, <strong>Parlementaire</strong> et <strong>Bras-droit</strong> disposent des mêmes droits pour consulter les votes, clore un procès ou annuler une accusation. La permission Discord « Administrateur » donne également accès à ces actions.</p>
+<p>Les actions de clôture et d’annulation nécessitent une confirmation. Les événements importants sont consignés dans un salon de logs privé ; les votes individuels y sont récapitulés à la résolution de l’affaire.</p>
+<p>L’équipe du serveur gère les permissions et la modération. Un verdict du bot ne dispense jamais d’examiner les faits avant toute décision réelle de modération.</p>
+<h2>Article VI — Des limites de la machine administrative</h2>
+<p>Le service peut être interrompu ou rencontrer des erreurs, notamment en cas d’indisponibilité de Discord, de permissions insuffisantes ou d’incident d’hébergement. La continuité du service et l’absence de perte de données ne sont pas garanties.</p>
+<p>En cas d’abus ou de dysfonctionnement, prévenez l’équipe du serveur ou le compte Discord <strong>.karantez</strong>. N’utilisez pas les accusations publiques pour communiquer des renseignements confidentiels.</p>
+<h2>Article VII — Des révisions et des réclamations</h2>
+<p>Ces conditions pourront évoluer avec le bot. La date de mise à jour figure en tête du document. Pour toute question sur leur application, contactez <strong>.karantez</strong> sur Discord.</p>
+<p><em>Flemme de trancher alors faites-le vous-même ! Pour les réclamations, en revanche, une personne répond.</em></p>
 </main>
-<footer>DOCUMENT ADMINISTRATIF · Toute ressemblance avec une administration excessivement zélée est pleinement intentionnelle.</footer>
+<footer>L’ACCUSATEUR PUBLIC · Contact Discord : <strong>.karantez</strong><br>Le tribunal est fictif. Les droits des personnes ne le sont pas.</footer>
 </body>
 </html>
